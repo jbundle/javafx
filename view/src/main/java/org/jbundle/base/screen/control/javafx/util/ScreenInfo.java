@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package org.jbundle.base.screen.control.swing.util;
+package org.jbundle.base.screen.control.javafx.util;
 
 /**
  * @(#)ScreenInfo.java  0.00 12-Feb-97 Don Corley
@@ -20,7 +20,7 @@ import javax.swing.UIManager;
 import javax.swing.plaf.metal.MetalLookAndFeel;
 
 import org.jbundle.base.model.ScreenConstants;
-import org.jbundle.base.screen.control.swing.SApplet;
+import org.jbundle.base.screen.control.javafx.SApplet;
 import org.jbundle.base.screen.model.BasePanel;
 import org.jbundle.model.PropertyOwner;
 import org.jbundle.thin.base.screen.BaseApplet;
@@ -34,7 +34,7 @@ import org.jbundle.thin.base.screen.landf.theme.CustomTheme;
 public class ScreenInfo extends Object
 {
     public static final int FIRST_ROW_OFFSET = 4;    // start 5 pixels down on displays
-    public static final int EXTRA_BOX_SPACING = 5; // Extra pixels needed for a box (Vertical)
+    public static final int EXTRA_BOX_SPACING = 5; // Extra pixels needed for a box (Fertical)
     public static final int EXTRA_ROW_SPACING = 2;
     public static final int HORIZONTAL_EXTRA_CHARS = 2;  // Extra chars in horizontal position
     public static final int FIELD_VERT_OFFSET = EXTRA_BOX_SPACING / 2; // Offset for a description
