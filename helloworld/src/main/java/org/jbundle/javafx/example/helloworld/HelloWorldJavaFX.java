@@ -14,7 +14,6 @@ import javafx.scene.text.Text;
 import javax.swing.JApplet;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
-import javax.swing.UIManager;
 
 /*
  * HelloWorldSwing.java requires no other files.
@@ -49,7 +48,7 @@ public class HelloWorldJavaFX extends JApplet {
         fxPanel.setScene(scene);
     }
 
-    private static Scene createScene() {
+    public static Scene createScene() {
         Group root = new Group();
         Scene scene = new Scene(root, Color.ALICEBLUE);
         Text text = new Text();
