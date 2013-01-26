@@ -3,12 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.jbundle.javafx.config</groupId>
-    <artifactId>jbundle-view-javafx-reactor</artifactId>
+    <groupId>org.jbundle.javafx.example</groupId>
+    <artifactId>jbundle-javafx-example-reactor</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>org.jbundle.javafx.example</groupId>
   <artifactId>org.jbundle.javafx.example.helloworld</artifactId>
 
   <name>jbundle-javafx.example</name>
