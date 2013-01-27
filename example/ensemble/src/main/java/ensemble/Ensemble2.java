@@ -74,7 +74,11 @@ import netscape.javascript.JSObject;
 public class Ensemble2 extends Application {
     static {
         // Enable using system proxy if set
+        try {
         System.setProperty("java.net.useSystemProxies", "true");
+        } catch (SecurityException e) {
+            // Don - Ignore this error - running in sandbox
+        }
     }
     public static final String DEFAULT_DOCS_URL = "http://download.oracle.com/javafx/2/api/";
     
@@ -123,8 +127,12 @@ public class Ensemble2 extends Application {
         ensemble2 = this;
         stage.setTitle("Ensemble");
         // set default docs location
+        try {
         docsUrl = System.getProperty("docs.url") != null ?
-                System.getProperty("docs.url") : DEFAULT_DOCS_URL; 
+                System.getProperty("docs.url") : DEFAULT_DOCS_URL;
+        } catch (SecurityException e1) {
+            docsUrl = DEFAULT_DOCS_URL; // Don - Ignore this error - running in sandbox (TODO add a web proxy)
+        }
         // create root stack pane that we use to be able to overlay proxy dialog
         StackPane layerPane = new StackPane();
         // check if applet

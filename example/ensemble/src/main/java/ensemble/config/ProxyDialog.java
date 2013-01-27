@@ -202,6 +202,7 @@ public class ProxyDialog extends VBox {
      */
     public void loadSettings() {
         // check if we have saved setings
+        try {
         File ensembleSettings = new File(System.getProperty("user.home"),".ensemble-settings");
         if (ensembleSettings.exists() && ensembleSettings.isFile()) {
             final Properties settings = new Properties();
@@ -223,6 +224,9 @@ public class ProxyDialog extends VBox {
             } catch (Exception e) {
                 e.printStackTrace();
             }
+        }
+        } catch (SecurityException e) {
+            // Don - Ignore this error - running in sandbox
         }
     }
 
