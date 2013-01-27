@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jbundle.javafx.example</groupId>
+    <artifactId>jbundle-javafx-example-reactor</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>org.jbundle.javafx.example.ensemble</artifactId>
+
+  <name>jbundle-javafx.ensemble</name>
+  <description>JavaFX example from Oracle</description>
+
+  <packaging>jar</packaging>
+  <!-- I prefer 'bundle' packaging -->
+  
+  <licenses>
+      <license>
+          <name>Oracle BSD License</name>
+          <url>http://www.oracle.com/technetwork/java/javase/terms/license/oraclebsd-1603217.txt</url>
+          <comments>Thanks Oracle!</comments>
+      </license>
+  </licenses>
+
+  <organization>
+    <name>Oracle</name>
+    <url>http://www.oracle.com</url>
+  </organization>
+
+  <dependencies>
+        <dependency>
+            <groupId>com.javafx</groupId>
+            <artifactId>javafx</artifactId>
+            <version>${javaFXVersion}</version>
+            <scope>system</scope>
+            <systemPath>${java.home}/lib/jfxrt.jar</systemPath>
+        </dependency>
+        <dependency>
+	    <groupId>org.apache.lucene</groupId>
+	    <artifactId>lucene-grouping</artifactId>
+	    <version>3.2.0</version>
+        </dependency>
+    </dependencies>
+
+  <properties>
+      <mainClass>ensemble.Ensemble2</mainClass> <!-- for mvn exec:java - Note: You must have jfxrt.jar on your classpath -->
+  </properties>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <filtering>false</filtering>
+      </resource>
+    </resources>
+  </build>
+
+</project>
