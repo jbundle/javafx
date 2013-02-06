@@ -11,7 +11,7 @@
   
     <groupId>org.jbundle.javafx.config</groupId>
     <artifactId>jbundle-view-javafx-reactor</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>0.9.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
     <name>jbundle-view-javafx-reactor</name>
@@ -21,7 +21,7 @@
   </properties>
 
   <modules>
-    <module>view</module>
+    <!-- module>view</module -->
     <module>example</module>
   </modules>
 
