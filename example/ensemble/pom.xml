@@ -33,7 +33,7 @@
         <dependency>
             <groupId>com.javafx</groupId>
             <artifactId>javafx</artifactId>
-            <version>${javaFXVersion}</version>
+            <version>${javaFX-version}</version>
             <scope>system</scope>
             <systemPath>${java.home}/lib/jfxrt.jar</systemPath>
         </dependency>
