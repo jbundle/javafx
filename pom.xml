@@ -20,6 +20,12 @@
     <projectName>jbundle-view-javafx</projectName>
   </properties>
 
+  <scm>
+    <url>https://github.com/jbundle/javafx</url>
+    <connection>scm:git:git://github.com/jbundle/javafx</connection>
+    <developerConnection>scm:git:git@github.com:jbundle/javafx</developerConnection>
+  </scm>
+
   <modules>
     <module>view</module>
     <module>example</module>
