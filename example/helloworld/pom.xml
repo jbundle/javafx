@@ -13,8 +13,8 @@
   <name>jbundle-javafx.example</name>
   <description>javafx example</description>
 
-  <packaging>jar</packaging>
-  <!-- I prefer 'bundle' packaging -->
+  <packaging>bundle</packaging>
+  <!-- Then I don't have to wrap it -->
 
 	<dependencies>
 		<dependency>
@@ -27,4 +27,3 @@
 	</dependencies>
 
 </project>
-
